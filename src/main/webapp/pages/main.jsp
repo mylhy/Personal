@@ -5,7 +5,7 @@
   Time: 20:50
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page isELIgnored="false" contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Title</title> <style>
@@ -40,6 +40,7 @@
         border: 1px yellowgreen solid;
     }
 </style>
+    <script src="${pageContext.request.contextPath}/js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 <!--top start-->
@@ -55,8 +56,15 @@
     <div id="leftDiv">
         <h4>用户管理</h4>
         <ul>
-            <li>添加用户</li>
-            <li>修改用户</li>
+            <li>
+                <a href="${pageContext.request.contextPath}/pages/showReader.jsp">读者相关信息</a>
+            </li>
+            <li>
+                <a href="${pageContext.request.contextPath}/booksTypeAction/findBooksType">图书类型相关信息</a>
+            </li>
+            <li>
+                <a href="${pageContext.request.contextPath}/pages/showBooks.jsp">图书相关信息</a>
+            </li>
         </ul>
 
 
